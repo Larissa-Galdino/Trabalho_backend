@@ -1,0 +1,63 @@
+package com.example.LivrosAPP.model;
+
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="livro")
+public class Livro {
+
+    @Id
+    @Column(name="Id")
+    private String id;
+    @Column(name="nome")
+    private String nome;
+    @Column(name="autor")
+    private String autor;
+    @Column(name="preco")
+    private Double preco;
+
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "id='" + id + '\'' +
+                ", nome='" + nome + '\'' +
+                ", autor='" + autor + '\'' +
+                ", preco=" + preco +
+                '}';
+    }
+}
