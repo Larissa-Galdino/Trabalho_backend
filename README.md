@@ -21,16 +21,14 @@ git clone https://github.com/Larissa-Galdino/Trabalho_backend.git
 2. Abra o projeto no IntelliJ.
 Teste da aplicação no IntelliJ e Postman
 A API possui os seguintes endpoints e métodos:
-3. 
-Método	Endpoint	Descrição
-POST /livros/lista	Salva uma lista de livros no banco de dados
-GET	/livros	Lista todos os livros ou busca por nome
-GET	/livros/{id}Busca um livro pelo ID
-PUT	/livros/{id}Atualiza um livro pelo ID
-DEL /livros/{id}Deleta um livro pelo ID
+3. Método Endpoint Descrição
+    - POST /livros/lista	Salva uma lista de livros no banco de dados
+    - GET /livros	Lista todos os livros ou busca por nome
+    - GET /livros/{id}Busca um livro pelo ID
+    - PUT /livros/{id}Atualiza um livro pelo ID
+    - DEL /livros/{id}Deleta um livro pelo ID
 
 ![img.png](img.png)
-
 
 3. Rodar a aplicação No IntelliJ, execute a classe principal: LivrosAppApplication
 No Body (raw JSON), insira a lista abaixo para salvar os livros no banco de dados:
@@ -67,20 +65,20 @@ No Body (raw JSON), insira a lista abaixo para salvar os livros no banco de dado
 
 4. Buscar livros (GET) :
 
-Para listar todos os livros:
-   GET http://localhost:8080/livros
+- Para listar todos os livros:
+- GET http://localhost:8080/livros
 
 ![img_2.png](img_2.png)
 
-Para buscar por nome específico:
-   GET http://localhost:8080/livros?nome=NomeDoLivro
-   Se for especificado um nome, a API retornará apenas os livros correspondentes. 
+- Para buscar por nome específico:
+- GET http://localhost:8080/livros?nome=NomeDoLivro
+- Se for especificado um nome, a API retornará apenas os livros correspondentes. 
 
 ![img_3.png](img_3.png)
 
 5. Buscar livro por ID (GET)
-   GET http://localhost:8080/livros/{id}
-   Substitua {id} pelo ID do livro que deseja remover.
+- GET http://localhost:8080/livros/{id}
+- Substitua {id} pelo ID do livro que deseja remover.
 
 ![img_4.png](img_4.png)
 
@@ -113,5 +111,5 @@ http://localhost:8080/h2-console
 
 ## Senha de Acesso ao Banco de Dados
     
-username: sa
-password: 1234
+- username: sa
+- password: 1234
