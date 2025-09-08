@@ -33,6 +33,7 @@ A API possui os seguintes endpoints e métodos:
 3. Rodar a aplicação No IntelliJ, execute a classe principal: LivrosAppApplication
 No Body (raw JSON), insira a lista abaixo para salvar os livros no banco de dados:
 
+```json
 [
 {
 "nome": "The Battle of the Apocalypse (A Batalha do Apocalipse)",
@@ -60,7 +61,7 @@ No Body (raw JSON), insira a lista abaixo para salvar os livros no banco de dado
 "preco": 29.9
 }
 ]
-
+```
 ![img_1.png](img_1.png)
 
 4. Buscar livros (GET) :
@@ -113,3 +114,8 @@ http://localhost:8080/h2-console
     
 - username: sa
 - password: 1234
+
+
+## Link das rotas no postman
+
+https://documenter.getpostman.com/view/47021646/2sB3HnJev5
